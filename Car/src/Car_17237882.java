@@ -1,5 +1,13 @@
+/*
+Student ID: 17237882
+Name: Dhammika Emmanuel Mendis
+Campus: Parramatta
+Tutor Name: Nick Tothill
+Class Day: Monday
+Class Time: 2pm
+*/
 
-public class Car {
+public class Car_17237882 {
   private int yearModel;
   private String make;
   private int speed;
@@ -15,7 +23,7 @@ public class Car {
    * @param carSpeed
    *          - The starting speed of the new car
    */
-  public Car(int carYearMod, String carMake, int carSpeed) {
+  public Car_17237882(int carYearMod, String carMake, int carSpeed) {
     yearModel = carYearMod;
     make = carMake;
     speed = carSpeed;
@@ -29,7 +37,7 @@ public class Car {
    * @param carMake
    *          - The make of the new car
    */
-  public Car(int carYearMod, String carMake) {
+  public Car_17237882(int carYearMod, String carMake) {
     yearModel = carYearMod;
     make = carMake;
     speed = 0;
@@ -40,7 +48,7 @@ public class Car {
    * values. Note: these values are for the purpose of the example only and are
    * not particularly sensible values to choose.
    */
-  public Car() {
+  public Car_17237882() {
     yearModel = 2016;
     make = "Subaru";
     speed = 50;

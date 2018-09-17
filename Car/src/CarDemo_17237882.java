@@ -1,25 +1,34 @@
+/*
+Student ID: 17237882
+Name: Dhammika Emmanuel Mendis
+Campus: Parramatta
+Tutor Name: Nick Tothill
+Class Day: Monday
+Class Time: 2pm
+*/
+
 import java.util.Scanner;
 
-public class CarDemo {
+public class CarDemo_17237882 {
 
   public static void main(String[] args) {
     Scanner keyboard = new Scanner(System.in);
 
-    Car car1 = new Car();
+    Car_17237882 car1 = new Car_17237882();
     
     System.out.println("Car 1 has been created: " + car1.getMake() + " " + car1.getYearModel());
 
     String car2Make = getString("Please enter the Make of Car 2: ", keyboard);
     int car2Model = getInt("Please enter the Year of Model for Car 2: ", keyboard);    
 
-    Car car2 = new Car(car2Model, car2Make);
+    Car_17237882 car2 = new Car_17237882(car2Model, car2Make);
     
     keyboard.nextLine();
     String car3Make = getString("Please enter the Make of Car 3: ", keyboard);
     int car3Model = getInt("Please enter the Year of Model for Car 3: ", keyboard);
     int car3Speed = getInt("Please enter the Starting speed for Car 3: ", keyboard);
     
-    Car car3 = new Car(car3Model, car3Make, car3Speed);
+    Car_17237882 car3 = new Car_17237882(car3Model, car3Make, car3Speed);
     
     
     keyboard.nextLine();
@@ -40,7 +49,7 @@ public class CarDemo {
     keyboard.close();
   }
   
-  public static void accelerateAndBreakDemo(Car demoCar, String carName, Scanner keyboard) {
+  public static void accelerateAndBreakDemo(Car_17237882 demoCar, String carName, Scanner keyboard) {
     
     System.out.print("\nPress enter to accelerate " + carName + " by 5.");
     keyboard.nextLine();
@@ -63,7 +72,7 @@ public class CarDemo {
     
   }
   
-  public static void displayCar(Car demoCar, String carName) {   
+  public static void displayCar(Car_17237882 demoCar, String carName) {   
     System.out.println(carName + " Make: " + demoCar.getMake());
     System.out.println(carName + " Model: " + demoCar.getYearModel());
     System.out.println(carName + " Speed: " + demoCar.getSpeed() + "\n");
@@ -79,7 +88,7 @@ public class CarDemo {
     return keyboard.nextInt();
   }
   
-  public static void displayCurrentSpeed(String carName, Car demoCar) {
+  public static void displayCurrentSpeed(String carName, Car_17237882 demoCar) {
     System.out.println(carName + " Current Speed: " + demoCar.getSpeed());
   }
 }
