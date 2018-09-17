@@ -21,16 +21,22 @@ public class CarDemo {
     
     Car car3 = new Car(car3Model, car3Make, car3Speed);
     
+    
     keyboard.nextLine();
-    accelerateAndBreakDemo(car1, "Car 1" + " (" + car1.getMake() + ")", keyboard);
+    String car1Name = "Car 1" + " (" + car1.getMake() + ")";
+    accelerateAndBreakDemo(car1, car1Name, keyboard);
     keyboard.nextLine();
-    accelerateAndBreakDemo(car2, "Car 2" + " (" + car2.getMake() + ")", keyboard);
+    String car2Name = "Car 2" + " (" + car2.getMake() + ")";
+    accelerateAndBreakDemo(car2, car2Name, keyboard);
     keyboard.nextLine();
-    accelerateAndBreakDemo(car3, "Car 3" + " (" + car3.getMake() + ")", keyboard);
-    System.out.println("\n");
+    String car3Name = "Car 3" + " (" + car3.getMake() + ")";
+    accelerateAndBreakDemo(car3, car3Name, keyboard);
+    
+    System.out.println("\n");    
     displayCar(car1, "Car 1");
     displayCar(car2, "Car 2");
     displayCar(car3, "Car 3");
+    
     keyboard.close();
   }
   
